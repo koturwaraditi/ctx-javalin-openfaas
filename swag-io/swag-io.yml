@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.0.135:31112
+functions:
+  swag-io:
+    lang: java8
+    handler: ./swag-io
+    image: swag-io:latest
